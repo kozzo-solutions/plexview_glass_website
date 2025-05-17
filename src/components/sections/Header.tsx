@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import plexioLogo from "../../assets/plexio-logo.png";
+import plexioLogo from "./../../assets/plexio-logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
