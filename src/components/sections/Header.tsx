@@ -1,7 +1,14 @@
 import { useState } from "react";
 import plexViewLogo from "../../assets/plexview-logo.png";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -96,19 +103,21 @@ export default function Header() {
               Fonctionnalités
             </a>
             <a
-              href="#testimonials"
-              className="text-sm font-medium hover:text-brand"
-              onClick={closeMobileMenu}
-            >
-              Témoignages
-            </a>
-            <a
               href="#faq"
               className="text-sm font-medium hover:text-brand"
               onClick={closeMobileMenu}
             >
               FAQ
             </a>
+            <button
+              onClick={() => {
+                changeLanguage(i18n.language === "fr" ? "en" : "fr");
+                closeMobileMenu();
+              }}
+              className="px-3 py-1 rounded bg-gray-200 text-gray-800 font-medium hover:bg-brand transition-colors duration-200"
+            >
+              {t("toggle")}
+            </button>
             <a
               href="#beta"
               className="bg-brand px-5 py-2 rounded-full text-dark font-semibold text-sm text-center"
