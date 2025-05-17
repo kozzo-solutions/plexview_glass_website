@@ -17,34 +17,10 @@ export default function Footer() {
                 className="h-20 mb-2"
               />
             </div>
-            <p className="text-gray-400 mt-2">{t("footer.slogan")}</p>
           </div>
 
           <div className="flex space-x-6 mb-6 md:mb-0">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-brand transition-colors"
-            >
-              <i className="fa-brands fa-linkedin text-xl"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-brand transition-colors"
-            >
-              <i className="fa-brands fa-twitter text-xl"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-brand transition-colors"
-            >
-              <i className="fa-brands fa-instagram text-xl"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-brand transition-colors"
-            >
-              <i className="fa-brands fa-facebook text-xl"></i>
-            </a>
+            <p className="text-gray-400 mt-2">{t("footer.slogan")}</p>
           </div>
         </div>
 

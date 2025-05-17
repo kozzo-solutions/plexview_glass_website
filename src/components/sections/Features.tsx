@@ -57,29 +57,34 @@ export default function Features() {
       <div className="container mx-auto px-6 mt-24">
         <div className="grid md:grid-cols-2 items-center">
           <div className="p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: t("features.highlightTitle"),
-                }}
-              />
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+              Une interface pensée pour{" "}
+              <span className="gradient-text">vous</span>
             </h3>
-            <p className="text-gray-300 mb-6">
-              {t("features.highlightDescription")}
+            <p className="text-gray-300 text-lg mb-8">
+              Notre interface intuitive vous permet de gérer l'ensemble de votre
+              portefeuille immobilier depuis un seul endroit, sur tous vos
+              appareils.
             </p>
-            <ul className="space-y-3">
-              {highlightList.map((item, idx) => (
-                <li className="flex items-start" key={idx}>
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>{item}</span>
-                </li>
-              ))}
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
+                <span>Personnalisable selon vos besoins</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
+                <span>Compatible avec mobile, tablette et ordinateur</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
+                <span>Mise à jour en temps réel</span>
+              </li>
             </ul>
           </div>
           <div className="h-full">
             <img
               src={plexViewInterface}
-              alt={t("features.imageAlt")}
+              alt="Interface PlexView sur plusieurs appareils"
               className="h-full w-full object-cover"
             />
           </div>

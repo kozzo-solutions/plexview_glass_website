@@ -24,6 +24,9 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div data-aos="fade-up" data-aos-delay="100" className="mb-6">
+            <div className="flex justify-center mb-10 pb-9 text-gray-300 text-2xl font-medium">
+              <p>Propulsé par le groupe Nolet Andrews</p>
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-shadow mb-2">
               <span dangerouslySetInnerHTML={{ __html: t("hero.title") }} />
             </h1>
