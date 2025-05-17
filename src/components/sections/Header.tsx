@@ -37,7 +37,7 @@ export default function Header() {
               </a>
 
               {/* Desktop Navigation */}
-              <nav className="hidden md:flex items-center space-x-8">
+              <nav className="hidden lg:flex items-center space-x-8">
                 <a
                   href="#mission"
                   className="text-base font-medium hover:text-brand transition-colors duration-200"
@@ -75,7 +75,7 @@ export default function Header() {
               {/* Mobile Menu Button */}
               <button
                 onClick={toggleMobileMenu}
-                className="block md:hidden text-white"
+                className="block lg:hidden text-white"
               >
                 <i className="fa-solid fa-bars text-xl"></i>
               </button>
@@ -85,7 +85,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`glass md:hidden absolute w-full py-4 px-6 ${
+          className={`glass lg:hidden absolute w-full py-4 px-6 ${
             isMobileMenuOpen ? "block" : "hidden"
           }`}
         >
@@ -116,7 +116,7 @@ export default function Header() {
                 changeLanguage(i18n.language === "fr" ? "en" : "fr");
                 closeMobileMenu();
               }}
-              className="font-bold text-white hover:text-brand transition-colors duration-200 bg-transparent px-3 py-1 rounded shadow-none"
+              className="w-min font-bold text-white hover:text-brand transition-colors duration-200 bg-transparent py-1 rounded shadow-none"
             >
               {t("header.toggle")}
             </button>
