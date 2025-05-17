@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import plexViewLogo from "../../assets/plexview-logo.png";
 
 export default function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -15,9 +17,7 @@ export default function Footer() {
                 className="h-20 mb-2"
               />
             </div>
-            <p className="text-gray-400 mt-2">
-              La gestion immobilière réinventée
-            </p>
+            <p className="text-gray-400 mt-2">{t("footer.slogan")}</p>
           </div>
 
           <div className="flex space-x-6 mb-6 md:mb-0">
@@ -56,30 +56,24 @@ export default function Footer() {
               href="#mission"
               className="text-sm text-gray-400 hover:text-brand"
             >
-              Mission
+              {t("footer.mission")}
             </a>
             <a
               href="#features"
               className="text-sm text-gray-400 hover:text-brand"
             >
-              Fonctionnalités
-            </a>
-            <a
-              href="#testimonials"
-              className="text-sm text-gray-400 hover:text-brand"
-            >
-              Témoignages
+              {t("footer.features")}
             </a>
             <a href="#faq" className="text-sm text-gray-400 hover:text-brand">
-              FAQ
+              {t("footer.faq")}
             </a>
             <a href="#beta" className="text-sm text-gray-400 hover:text-brand">
-              Rejoindre la BETA
+              {t("footer.join_beta")}
             </a>
           </nav>
 
           <div className="text-sm text-gray-500">
-            &copy; {currentYear} PlexView. Tous droits réservés.
+            &copy; {currentYear} PlexView. {t("footer.copyright")}
           </div>
         </div>
       </div>

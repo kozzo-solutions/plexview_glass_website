@@ -1,4 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 export default function Mission() {
+  const { t } = useTranslation();
+
+  const values = t("mission.values", { returnObjects: true }) as string[];
+
   return (
     <section
       id="mission"
@@ -8,39 +14,32 @@ export default function Mission() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div data-aos="fade-right">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Notre <span className="gradient-text">mission</span>
+              <span dangerouslySetInnerHTML={{ __html: t("mission.title") }} />
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              PlexView simplifie la gestion immobilière en combinant une
-              interface intuitive, des outils puissants et un réseau de
-              partenaires qualifiés pour créer une expérience sans friction.
+              {t("mission.description1")}
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Notre objectif est de vous faire gagner du temps et de l'énergie
-              pour vous concentrer sur ce qui compte vraiment : développer votre
-              patrimoine immobilier.
+              {t("mission.description2")}
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
-              <div className="glass rounded-lg px-4 py-3 flex items-center">
-                <i className="fa-solid fa-check text-brand mr-2"></i>
-                <span>Simplicité</span>
-              </div>
-              <div className="glass rounded-lg px-4 py-3 flex items-center">
-                <i className="fa-solid fa-check text-brand mr-2"></i>
-                <span>Efficacité</span>
-              </div>
-              <div className="glass rounded-lg px-4 py-3 flex items-center">
-                <i className="fa-solid fa-check text-brand mr-2"></i>
-                <span>Innovation</span>
-              </div>
+              {values.map((value, idx) => (
+                <div
+                  key={idx}
+                  className="glass rounded-lg px-4 py-3 flex items-center"
+                >
+                  <i className="fa-solid fa-check text-brand mr-2"></i>
+                  <span>{value}</span>
+                </div>
+              ))}
             </div>
           </div>
 
           <div data-aos="fade-left" className="relative">
             <img
               src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=800&h=800&q=80"
-              alt="Dashboard PlexView sur tablette"
+              alt={t("mission.imageAlt")}
               className="rounded-xl shadow-2xl shadow-brand/5 w-full"
               data-parallax-factor="0.1"
             />

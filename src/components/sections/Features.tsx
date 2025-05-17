@@ -1,62 +1,30 @@
-import { AnimatedText } from "@/components/ui/animated-text";
+import { useTranslation } from "react-i18next";
 import plexViewInterface from "../../assets/interface.png";
 
 export default function Features() {
-  const features = [
-    {
-      icon: "fa-chart-line",
-      title: "Tableau de bord intelligent",
-      description:
-        "Visualisez toutes vos opérations avec des données en temps réel et des indicateurs personnalisables.",
-      delay: 0,
-    },
-    {
-      icon: "fa-tools",
-      title: "Maintenance automatisée",
-      description:
-        "Gérez facilement les demandes d'intervention et collaborez avec des professionnels qualifiés.",
-      delay: 100,
-    },
-    {
-      icon: "fa-file-contract",
-      title: "Gestion des baux",
-      description:
-        "Création, signature et suivi de vos contrats de location en quelques clics.",
-      delay: 200,
-    },
-    {
-      icon: "fa-credit-card",
-      title: "Paiements simplifiés",
-      description:
-        "Percevez vos loyers automatiquement et suivez vos revenus locatifs sans effort.",
-      delay: 300,
-    },
-    {
-      icon: "fa-comments",
-      title: "Communication centralisée",
-      description:
-        "Échangez facilement avec vos locataires et prestataires depuis une interface unique.",
-      delay: 400,
-    },
-    {
-      icon: "fa-file-invoice-dollar",
-      title: "Comptabilité intégrée",
-      description:
-        "Suivez vos finances et générez des rapports détaillés pour optimiser votre rentabilité.",
-      delay: 500,
-    },
-  ];
+  const { t } = useTranslation();
+
+  // Get features from translations
+  const features = (
+    t("features.items", { returnObjects: true }) as {
+      icon: string;
+      title: string;
+      description: string;
+    }[]
+  ).map((feature, idx) => ({
+    ...feature,
+    delay: idx * 100,
+  }));
 
   return (
     <section id="features" className="py-24 bg-dark relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Fonctionnalités <span className="gradient-text">puissantes</span>
+            <span dangerouslySetInnerHTML={{ __html: t("features.title") }} />
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Des outils conçus pour simplifier chaque aspect de la gestion
-            immobilière
+            {t("features.subtitle")}
           </p>
         </div>
 
@@ -86,33 +54,32 @@ export default function Features() {
           <div className="grid md:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Une interface pensée pour{" "}
-                <span className="gradient-text">vous</span>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t("features.highlightTitle"),
+                  }}
+                />
               </h3>
               <p className="text-gray-300 mb-6">
-                Notre interface intuitive vous permet de gérer l'ensemble de
-                votre portefeuille immobilier depuis un seul endroit, sur tous
-                vos appareils.
+                {t("features.highlightDescription")}
               </p>
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Personnalisable selon vos besoins</span>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Compatible avec mobile, tablette et ordinateur</span>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Mise à jour en temps réel</span>
-                </li>
+                {(
+                  t("features.highlightList", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item, idx) => (
+                  <li className="flex items-start" key={idx}>
+                    <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="h-full">
               <img
                 src={plexViewInterface}
-                alt="Interface PlexView sur plusieurs appareils"
+                alt={t("features.imageAlt")}
                 className="h-full w-full object-cover"
               />
             </div>

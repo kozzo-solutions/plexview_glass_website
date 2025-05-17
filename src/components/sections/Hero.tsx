@@ -1,11 +1,8 @@
-import { Countdown } from "@/components/ui/countdown";
-import { AnimatedText } from "@/components/ui/animated-text";
-import plexViewiewLogo from "../../assets/plexview-logo.png";
+import { useTranslation } from "react-i18next";
+import plexViewLogo from "../../assets/plexview-logo.png";
 
 export default function Hero() {
-  // Calculate launch date (7 months from now)
-  const launchDate = new Date();
-  launchDate.setMonth(launchDate.getMonth() + 7);
+  const { t } = useTranslation();
 
   return (
     <section
@@ -31,26 +28,18 @@ export default function Hero() {
             {/* PlexView Logo */}
             <div className="flex justify-center mb-6">
               <img
-                src={plexViewiewLogo}
+                src={plexViewLogo}
                 alt="PlexView Logo"
                 className="w-48 md:w-64 h-auto"
               />
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-shadow mb-2">
-              La gestion immobilière{" "}
-              <span className="gradient-text">réinventée</span>
+              <span dangerouslySetInnerHTML={{ __html: t("hero.title") }} />
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mt-4">
-              Une plateforme tout-en-un pour la gestion de vos biens immobiliers
+              {t("hero.subtitle")}
             </p>
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="200" className="mb-10">
-            {/* <div className="text-2xl font-medium mb-2">Lancement dans</div> */}
-
-            {/* Countdown Component
-            <Countdown targetDate={launchDate} /> */}
           </div>
 
           <div data-aos="fade-up" data-aos-delay="300">
@@ -58,17 +47,10 @@ export default function Hero() {
               href="#beta"
               className="inline-block bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
             >
-              Rejoindre la liste d'attente
+              {t("hero.cta")}
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#mission" className="text-white/60 hover:text-white">
-          <i className="fa-solid fa-chevron-down text-2xl"></i>
-        </a>
       </div>
     </section>
   );

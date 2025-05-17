@@ -6,6 +6,18 @@
     "toggle": "FR",
     "join_beta": "Join the BETA"
   },
+  "hero": {
+    "title": "Property management <span class=\"gradient-text\">reinvented</span>",
+    "subtitle": "An all-in-one platform for managing your real estate assets",
+    "cta": "Join the waiting list"
+  },
+  "mission": {
+    "title": "Our <span class=\"gradient-text\">mission</span>",
+    "description1": "PlexView simplifies property management by combining an intuitive interface, powerful tools, and a network of qualified partners to create a seamless experience.",
+    "description2": "Our goal is to save you time and energy so you can focus on what really matters: growing your real estate portfolio.",
+    "values": ["Simplicity", "Efficiency", "Innovation"],
+    "imageAlt": "PlexView dashboard on tablet"
+  },
   "betaSignup": {
     "title": "Join the <span class=\"gradient-text\">BETA</span>",
     "subtitle": "Be among the first to discover Plexio and enjoy exclusive benefits",
@@ -24,6 +36,50 @@
     "submit": "Join the waiting list",
     "processing": "Processing...",
     "limited": "Spots are limited. We will contact you as soon as a spot is available."
+  },
+  "features": {
+    "title": "Powerful <span class=\"gradient-text\">Features</span>",
+    "subtitle": "Tools designed to simplify every aspect of property management",
+    "items": [
+      {
+        "icon": "fa-chart-line",
+        "title": "Smart Dashboard",
+        "description": "View all your operations with real-time data and customizable indicators."
+      },
+      {
+        "icon": "fa-tools",
+        "title": "Automated Maintenance",
+        "description": "Easily manage maintenance requests and collaborate with qualified professionals."
+      },
+      {
+        "icon": "fa-file-contract",
+        "title": "Lease Management",
+        "description": "Create, sign, and track your rental contracts in just a few clicks."
+      },
+      {
+        "icon": "fa-credit-card",
+        "title": "Simplified Payments",
+        "description": "Collect your rent automatically and track your rental income effortlessly."
+      },
+      {
+        "icon": "fa-comments",
+        "title": "Centralized Communication",
+        "description": "Easily communicate with your tenants and service providers from a single interface."
+      },
+      {
+        "icon": "fa-file-invoice-dollar",
+        "title": "Integrated Accounting",
+        "description": "Track your finances and generate detailed reports to optimize your profitability."
+      }
+    ],
+    "highlightTitle": "An interface designed for <span class=\"gradient-text\">you</span>",
+    "highlightDescription": "Our intuitive interface lets you manage your entire property portfolio from one place, on all your devices.",
+    "highlightList": [
+      "Customizable to your needs",
+      "Compatible with mobile, tablet, and desktop",
+      "Real-time updates"
+    ],
+    "imageAlt": "PlexView interface on multiple devices"
   },
   "faq": {
     "title": "Frequently <span class=\"gradient-text\">Asked Questions</span>",
@@ -50,5 +106,13 @@
         "answer": "To join our beta program, simply fill out the registration form at the bottom of the page. Our team will contact you to introduce the platform and help you get started with Plexio."
       }
     ]
+  },
+  "footer": {
+    "slogan": "Property management reinvented",
+    "mission": "Mission",
+    "features": "Features",
+    "faq": "FAQ",
+    "join_beta": "Join the BETA",
+    "copyright": "All rights reserved."
   }
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import plexViewLogo from "../../assets/plexview-logo.png";
 import { useTranslation } from "react-i18next";
+import plexViewLogo from "../../assets/plexview-logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -49,12 +49,6 @@ export default function Header() {
                   className="text-base font-medium hover:text-brand transition-colors duration-200"
                 >
                   {t("header.features")}
-                </a>
-                <a
-                  href="#testimonials"
-                  className="text-base font-medium hover:text-brand transition-colors duration-200"
-                >
-                  Témoignages
                 </a>
                 <a
                   href="#faq"
