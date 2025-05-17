@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { AnimatedText } from "@/components/ui/animated-text";
 
 export default function BetaSignup() {
   const { t } = useTranslation();
@@ -28,18 +27,23 @@ export default function BetaSignup() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
 
-    // This would normally be an API call
-    setTimeout(() => {
-      // Simulate successful form submission
+    try {
+      const response = await fetch("https://sheetdb.io/api/v1/5wwr1orhjl4uw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: formData }),
+      });
+
+      if (!response.ok) throw new Error("Network response was not ok");
+
       setIsSubmitting(false);
       setSubmitSuccess(true);
 
-      // Reset form after 5 seconds
       setTimeout(() => {
         setSubmitSuccess(false);
         setFormData({
@@ -50,7 +54,10 @@ export default function BetaSignup() {
           consent: false,
         });
       }, 5000);
-    }, 1500);
+    } catch (err) {
+      setIsSubmitting(false);
+      setErrorMessage("Submission failed. Please try again.");
+    }
   };
 
   return (

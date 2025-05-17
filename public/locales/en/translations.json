@@ -20,7 +20,7 @@
   },
   "betaSignup": {
     "title": "Join the <span class=\"gradient-text\">BETA</span>",
-    "subtitle": "Be among the first to discover Plexio and enjoy exclusive benefits",
+    "subtitle": "Be among the first to discover PlexView and enjoy exclusive benefits",
     "successTitle": "Thank you for signing up!",
     "successText": "We will contact you as soon as a spot is available for the beta.",
     "firstName": "First name",
@@ -32,7 +32,7 @@
     "properties_6_20": "6 to 20 properties",
     "properties_21_50": "21 to 50 properties",
     "properties_50_plus": "More than 50 properties",
-    "consent": "I agree to receive information about Plexio and understand that my data will be processed in accordance with the <a href=\"#\" class=\"text-brand underline\">Privacy Policy</a>.",
+    "consent": "I agree to receive information about PlexView and understand that my data will be processed in accordance with the <a href=\"#\" class=\"text-brand underline\">Privacy Policy</a>.",
     "submit": "Join the waiting list",
     "processing": "Processing...",
     "limited": "Spots are limited. We will contact you as soon as a spot is available."
@@ -83,27 +83,27 @@
   },
   "faq": {
     "title": "Frequently <span class=\"gradient-text\">Asked Questions</span>",
-    "subtitle": "Everything you need to know about Plexio",
+    "subtitle": "Everything you need to know about PlexView",
     "items": [
       {
-        "question": "Who is Plexio for?",
-        "answer": "Plexio is for all real estate professionals: individual owners, property managers, condominium associations, and real estate agencies. Our platform adapts to the size of your portfolio, whether you own a studio or manage hundreds of properties."
+        "question": "Who is PlexView for?",
+        "answer": "PlexView is for all real estate professionals: individual owners, property managers, condominium associations, and real estate agencies. Our platform adapts to the size of your portfolio, whether you own a studio or manage hundreds of properties."
       },
       {
         "question": "How is my data protected?",
         "answer": "Security is our priority. All your data is end-to-end encrypted and we use secure servers compliant with GDPR standards. We perform regular backups and our systems are audited by cybersecurity experts."
       },
       {
-        "question": "What makes Plexio different from other solutions?",
-        "answer": "Plexio stands out with its modern and intuitive interface, proactive management approach (anticipatory alerts, optimization suggestions), and a connected ecosystem of qualified partners. Our solution is designed to save you time while optimizing the profitability of your assets."
+        "question": "What makes PlexView different from other solutions?",
+        "answer": "PlexView stands out with its modern and intuitive interface, proactive management approach (anticipatory alerts, optimization suggestions), and a connected ecosystem of qualified partners. Our solution is designed to save you time while optimizing the profitability of your assets."
       },
       {
-        "question": "What are Plexio's prices?",
+        "question": "What are PlexView's prices?",
         "answer": "We offer several plans tailored to different needs, from the Essential offer for small owners to the Enterprise offer for professional managers. Final prices will be announced at the official launch, but beta participants will benefit from lifetime preferential conditions."
       },
       {
         "question": "How do I join the beta?",
-        "answer": "To join our beta program, simply fill out the registration form at the bottom of the page. Our team will contact you to introduce the platform and help you get started with Plexio."
+        "answer": "To join our beta program, simply fill out the registration form at the bottom of the page. Our team will contact you to introduce the platform and help you get started with PlexView."
       }
     ]
   },
