@@ -1,4 +1,54 @@
 {
-  "toggle": "FR",
-  "test": "Test fr"
+  "header": {
+    "mission": "Mission",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "toggle": "EN",
+    "join_beta": "Rejoindre la BETA"
+  },
+  "betaSignup": {
+    "title": "Rejoignez la <span class=\"gradient-text\">BETA</span>",
+    "subtitle": "Soyez parmi les premiers à découvrir Plexio et bénéficiez d'avantages exclusifs",
+    "successTitle": "Merci pour votre inscription!",
+    "successText": "Nous vous contacterons dès qu'une place sera disponible pour la beta.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email professionnel",
+    "properties": "Nombre de biens gérés",
+    "select": "Sélectionnez",
+    "properties_1_5": "1 à 5 biens",
+    "properties_6_20": "6 à 20 biens",
+    "properties_21_50": "21 à 50 biens",
+    "properties_50_plus": "Plus de 50 biens",
+    "consent": "J'accepte de recevoir des informations sur Plexio et je comprends que mes données seront traitées conformément à la <a href=\"#\" class=\"text-brand underline\">Politique de confidentialité</a>.",
+    "submit": "Rejoindre la liste d'attente",
+    "processing": "Traitement...",
+    "limited": "Les places sont limitées. Nous vous contacterons dès qu'une place sera disponible."
+  },
+  "faq": {
+    "title": "Questions <span class=\"gradient-text\">fréquentes</span>",
+    "subtitle": "Tout ce que vous devez savoir sur Plexio",
+    "items": [
+      {
+        "question": "À qui s'adresse Plexio ?",
+        "answer": "Plexio s'adresse à tous les acteurs de l'immobilier : propriétaires individuels, gestionnaires de biens, syndics de copropriété et agences immobilières. Notre plateforme s'adapte à la taille de votre portefeuille, que vous possédiez un studio ou gériez des centaines de biens."
+      },
+      {
+        "question": "Comment mes données sont-elles protégées ?",
+        "answer": "La sécurité est notre priorité. Toutes vos données sont chiffrées de bout en bout et nous utilisons des serveurs sécurisés conformes aux normes RGPD. Nous effectuons des sauvegardes régulières et nos systèmes sont audités par des experts en cybersécurité."
+      },
+      {
+        "question": "Qu'est-ce qui différencie Plexio des autres solutions ?",
+        "answer": "Plexio se distingue par son interface moderne et intuitive, son approche proactive de la gestion (alertes anticipées, suggestions d'optimisation) et son écosystème connecté de partenaires qualifiés. Notre solution est pensée pour vous faire gagner du temps tout en optimisant la rentabilité de votre patrimoine."
+      },
+      {
+        "question": "Quels sont les tarifs de Plexio ?",
+        "answer": "Nous proposons plusieurs formules adaptées à différents besoins, de l'offre Essentielle pour les petits propriétaires à l'offre Entreprise pour les gestionnaires professionnels. Les tarifs définitifs seront annoncés lors du lancement officiel, mais les participants à la beta bénéficieront de conditions préférentielles à vie."
+      },
+      {
+        "question": "Comment rejoindre la beta ?",
+        "answer": "Pour rejoindre notre programme beta, il vous suffit de remplir le formulaire d'inscription en bas de page. Notre équipe vous contactera pour vous présenter la plateforme et vous accompagner dans la prise en main de Plexio."
+      }
+    ]
+  }
 }

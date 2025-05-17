@@ -44,33 +44,33 @@ export default function Header() {
                   href="#mission"
                   className="text-sm font-medium hover:text-brand transition-colors duration-200"
                 >
-                  Mission
+                  {t("header.mission")}
                 </a>
                 <a
                   href="#features"
                   className="text-sm font-medium hover:text-brand transition-colors duration-200"
                 >
-                  Fonctionnalités
+                  {t("header.features")}
                 </a>
                 <a
                   href="#faq"
                   className="text-sm font-medium hover:text-brand transition-colors duration-200"
                 >
-                  FAQ
+                  {t("header.faq")}
                 </a>
                 <button
                   onClick={() =>
                     changeLanguage(i18n.language === "fr" ? "en" : "fr")
                   }
-                  className="ml-4 px-3 py-1 rounded bg-gray-200 text-gray-800 font-medium hover:bg-brand transition-colors duration-200"
+                  className="ml-4 font-bold text-white hover:text-brand transition-colors duration-200 bg-transparent px-3 py-1 rounded shadow-none"
                 >
-                  {t("toggle")}
+                  {t("header.toggle")}
                 </button>
                 <a
                   href="#beta"
                   className="bg-brand px-5 py-2 rounded-full text-dark font-semibold text-sm hover:bg-brand-light transition-all duration-200 shadow-lg shadow-brand/20"
                 >
-                  Rejoindre la BETA
+                  {t("header.join_beta")}
                 </a>
               </nav>
 
@@ -97,37 +97,37 @@ export default function Header() {
               className="text-sm font-medium hover:text-brand"
               onClick={closeMobileMenu}
             >
-              Mission
+              {t("header.mission")}
             </a>
             <a
               href="#features"
               className="text-sm font-medium hover:text-brand"
               onClick={closeMobileMenu}
             >
-              Fonctionnalités
+              {t("header.features")}
             </a>
             <a
               href="#faq"
               className="text-sm font-medium hover:text-brand"
               onClick={closeMobileMenu}
             >
-              FAQ
+              {t("header.faq")}
             </a>
             <button
               onClick={() => {
                 changeLanguage(i18n.language === "fr" ? "en" : "fr");
                 closeMobileMenu();
               }}
-              className="px-3 py-1 rounded bg-gray-200 text-gray-800 font-medium hover:bg-brand transition-colors duration-200"
+              className="font-bold text-white hover:text-brand transition-colors duration-200 bg-transparent px-3 py-1 rounded shadow-none"
             >
-              {t("toggle")}
+              {t("header.toggle")}
             </button>
             <a
               href="#beta"
               className="bg-brand px-5 py-2 rounded-full text-dark font-semibold text-sm text-center"
               onClick={closeMobileMenu}
             >
-              Rejoindre la BETA
+              {t("header.join_beta")}
             </a>
           </nav>
         </div>
