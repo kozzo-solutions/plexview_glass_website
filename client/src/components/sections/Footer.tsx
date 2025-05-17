@@ -36,7 +36,6 @@ export default function Footer() {
           <nav className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mb-6 md:mb-0">
             <a href="#mission" className="text-sm text-gray-400 hover:text-brand">Mission</a>
             <a href="#features" className="text-sm text-gray-400 hover:text-brand">Fonctionnalités</a>
-            <a href="#testimonials" className="text-sm text-gray-400 hover:text-brand">Témoignages</a>
             <a href="#faq" className="text-sm text-gray-400 hover:text-brand">FAQ</a>
             <a href="#beta" className="text-sm text-gray-400 hover:text-brand">Rejoindre la BETA</a>
           </nav>
