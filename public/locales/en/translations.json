@@ -9,7 +9,8 @@
   "hero": {
     "title": "Property management <span class=\"gradient-text\">reinvented</span>",
     "subtitle": "An all-in-one platform for managing your real estate assets",
-    "cta": "Join the waiting list"
+    "cta": "Join the waiting list",
+    "poweredBy": "Powered by Nolet Andrews Group"
   },
   "mission": {
     "title": "Our <span class=\"gradient-text\">mission</span>",

@@ -9,7 +9,8 @@
   "hero": {
     "title": "La gestion immobilière <span class=\"gradient-text\">réinventée</span>",
     "subtitle": "Une plateforme tout-en-un pour la gestion de vos biens immobiliers",
-    "cta": "Rejoindre la liste d'attente"
+    "cta": "Rejoindre la liste d'attente",
+    "poweredBy": "Propulsé par le groupe Nolet Andrews"
   },
   "mission": {
     "title": "Notre <span class=\"gradient-text\">mission</span>",
