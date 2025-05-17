@@ -9,7 +9,6 @@ import BetaSignup from "@/components/sections/BetaSignup";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
-  // Parallax effect for elements with data-parallax-factor attribute
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const x = e.clientX / window.innerWidth;
@@ -27,26 +26,6 @@ export default function Home() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  // Header scroll effect
-  useEffect(() => {
-    const header = document.getElementById('mainHeader');
-    
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        header?.classList.add('py-2');
-        header?.classList.add('shadow-lg');
-      } else {
-        header?.classList.remove('py-2');
-        header?.classList.remove('shadow-lg');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
