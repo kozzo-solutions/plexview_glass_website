@@ -12,12 +12,6 @@ export default function FAQ() {
 
   const [openIndices, setOpenIndices] = useState<number[]>([]);
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndices((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
   const faqItems = (
     t("faq.items", { returnObjects: true }) as {
       question: string;

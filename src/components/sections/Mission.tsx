@@ -11,9 +11,9 @@ export default function Mission() {
               Notre <span className="gradient-text">mission</span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Plexio simplifie la gestion immobilière en combinant une interface
-              intuitive, des outils puissants et un réseau de partenaires
-              qualifiés pour créer une expérience sans friction.
+              PlexView simplifie la gestion immobilière en combinant une
+              interface intuitive, des outils puissants et un réseau de
+              partenaires qualifiés pour créer une expérience sans friction.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               Notre objectif est de vous faire gagner du temps et de l'énergie
@@ -40,7 +40,7 @@ export default function Mission() {
           <div data-aos="fade-left" className="relative">
             <img
               src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=800&h=800&q=80"
-              alt="Dashboard Plexio sur tablette"
+              alt="Dashboard PlexView sur tablette"
               className="rounded-xl shadow-2xl shadow-brand/5 w-full"
               data-parallax-factor="0.1"
             />

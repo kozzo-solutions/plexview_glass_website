@@ -1,6 +1,6 @@
 import { useState } from "react";
+import plexViewLogo from "../../assets/plexview-logo.png";
 import { useTranslation } from "react-i18next";
-import plexioLogo from "./../../assets/plexio-logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -26,35 +26,39 @@ export default function Header() {
         className="fixed top-0 w-full z-50 transition-all duration-300"
       >
         <div className="glass">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="flex justify-between items-center">
-              <a href="#hero" className="flex items-center">
-                <div className="flex items-center">
-                  <img
-                    src={plexioLogo}
-                    alt="Plexio Logo"
-                    style={{ height: "100px", width: "auto" }}
-                  />
-                </div>
+              <a href="#hero" className="flex items-center space-x-4">
+                <img
+                  src={plexViewLogo}
+                  alt="PlexView Logo"
+                  style={{ height: "150px", width: "auto" }}
+                />
               </a>
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
                 <a
                   href="#mission"
-                  className="text-sm font-medium hover:text-brand transition-colors duration-200"
+                  className="text-base font-medium hover:text-brand transition-colors duration-200"
                 >
                   {t("header.mission")}
                 </a>
                 <a
                   href="#features"
-                  className="text-sm font-medium hover:text-brand transition-colors duration-200"
+                  className="text-base font-medium hover:text-brand transition-colors duration-200"
                 >
                   {t("header.features")}
                 </a>
                 <a
+                  href="#testimonials"
+                  className="text-base font-medium hover:text-brand transition-colors duration-200"
+                >
+                  Témoignages
+                </a>
+                <a
                   href="#faq"
-                  className="text-sm font-medium hover:text-brand transition-colors duration-200"
+                  className="text-base font-medium hover:text-brand transition-colors duration-200"
                 >
                   {t("header.faq")}
                 </a>
@@ -68,7 +72,7 @@ export default function Header() {
                 </button>
                 <a
                   href="#beta"
-                  className="bg-brand px-5 py-2 rounded-full text-dark font-semibold text-sm hover:bg-brand-light transition-all duration-200 shadow-lg shadow-brand/20"
+                  className="bg-brand px-5 py-2 rounded-full text-dark font-semibold text-base hover:bg-brand-light transition-all duration-200 shadow-lg shadow-brand/20"
                 >
                   {t("header.join_beta")}
                 </a>

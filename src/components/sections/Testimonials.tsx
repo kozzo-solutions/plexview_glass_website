@@ -25,7 +25,7 @@ export default function Testimonials() {
       role: "Investisseur immobilier",
       rating: 5,
       comment:
-        "Plexio m'a permis d'automatiser tout ce que je faisais manuellement. La vision globale sur mes investissements est un vrai plus pour prendre des décisions éclairées.",
+        "PlexView m'a permis d'automatiser tout ce que je faisais manuellement. La vision globale sur mes investissements est un vrai plus pour prendre des décisions éclairées.",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80",
       delay: 200,

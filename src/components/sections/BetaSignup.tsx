@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { AnimatedText } from "@/components/ui/animated-text";
 
 export default function BetaSignup() {
   const { t } = useTranslation();
@@ -65,11 +66,13 @@ export default function BetaSignup() {
           data-aos="fade-up"
         >
           <div className="text-center mb-10">
-            <h2
-              className="text-3xl md:text-4xl font-bold mb-4"
-              dangerouslySetInnerHTML={{ __html: t("betaSignup.title") }}
-            />
-            <p>{t("betaSignup.subtitle")}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Rejoignez la <span className="gradient-text">BETA</span>
+            </h2>
+            <p className="text-gray-300">
+              Soyez parmi les premiers à découvrir PlexView et bénéficiez
+              d'avantages exclusifs
+            </p>
           </div>
 
           {submitSuccess ? (
@@ -78,9 +81,12 @@ export default function BetaSignup() {
                 <i className="fa-solid fa-circle-check text-green-500"></i>
               </div>
               <h3 className="text-2xl font-bold mb-2">
-                {t("betaSignup.successTitle")}
+                Merci pour votre inscription!
               </h3>
-              <p className="text-gray-300">{t("betaSignup.successText")}</p>
+              <p className="text-gray-300">
+                Nous vous contacterons dès qu'une place sera disponible pour la
+                beta.
+              </p>
             </div>
           ) : (
             <form className="space-y-6" onSubmit={handleSubmit}>
