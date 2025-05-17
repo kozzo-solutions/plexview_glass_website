@@ -51,10 +51,7 @@ export default function BetaSignup() {
   };
 
   return (
-    <section
-      id="beta"
-      className="py-24 bg-dark-deeper relative overflow-hidden"
-    >
+    <section id="beta" className="py-24 bg-dark relative overflow-hidden">
       <div className="circle-bg absolute w-[500px] h-[500px] -right-20 top-1/2 -translate-y-1/2"></div>
 
       <div className="container mx-auto px-6 relative">

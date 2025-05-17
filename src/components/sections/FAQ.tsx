@@ -54,7 +54,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-dark relative overflow-hidden">
+    <section id="faq" className="py-24 bg-dark-deeper relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

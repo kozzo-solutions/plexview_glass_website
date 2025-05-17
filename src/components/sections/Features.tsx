@@ -82,40 +82,38 @@ export default function Features() {
 
       {/* Feature Highlight */}
       <div className="container mx-auto px-6 mt-24">
-        <div className="glass rounded-2xl overflow-hidden">
-          <div className="grid md:grid-cols-2 items-center">
-            <div className="p-8 md:p-12">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Une interface pensée pour{" "}
-                <span className="gradient-text">vous</span>
-              </h3>
-              <p className="text-gray-300 mb-6">
-                Notre interface intuitive vous permet de gérer l'ensemble de
-                votre portefeuille immobilier depuis un seul endroit, sur tous
-                vos appareils.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Personnalisable selon vos besoins</span>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Compatible avec mobile, tablette et ordinateur</span>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
-                  <span>Mise à jour en temps réel</span>
-                </li>
-              </ul>
-            </div>
-            <div className="h-full">
-              <img
-                src={plexViewInterface}
-                alt="Interface PlexView sur plusieurs appareils"
-                className="h-full w-full object-cover"
-              />
-            </div>
+        <div className="grid md:grid-cols-2 items-center">
+          <div className="p-8 md:p-12">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Une interface pensée pour{" "}
+              <span className="gradient-text">vous</span>
+            </h3>
+            <p className="text-gray-300 mb-6">
+              Notre interface intuitive vous permet de gérer l'ensemble de votre
+              portefeuille immobilier depuis un seul endroit, sur tous vos
+              appareils.
+            </p>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                <span>Personnalisable selon vos besoins</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                <span>Compatible avec mobile, tablette et ordinateur</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                <span>Mise à jour en temps réel</span>
+              </li>
+            </ul>
+          </div>
+          <div className="h-full">
+            <img
+              src={plexViewInterface}
+              alt="Interface PlexView sur plusieurs appareils"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </div>
