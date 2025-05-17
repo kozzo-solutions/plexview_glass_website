@@ -30,9 +30,10 @@ export default function Header() {
             <div className="flex justify-between items-center">
               <a href="#hero" className="flex items-center space-x-4">
                 <img
+                  className="logo"
                   src={plexViewLogo}
                   alt="PlexView Logo"
-                  style={{ height: "150px", width: "auto" }}
+                  style={{ width: "auto" }}
                 />
               </a>
 

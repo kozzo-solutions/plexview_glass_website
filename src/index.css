@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Quicksand:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +24,7 @@
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 20 14.3% 4.1%;
   --radius: 0.5rem;
-  
+
   /* Brand colors */
   --brand: 35 100% 55%;
   --brand-light: 35 100% 65%;
@@ -67,13 +66,14 @@
   body {
     @apply font-sans antialiased bg-dark text-white;
     font-family: "Quicksand", sans-serif;
-    
-    p,a,li  {
+
+    p,
+    a,
+    li {
       font-family: "Quicksand", sans-serif;
-      
     }
   }
-  
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -84,41 +84,71 @@
   .glass {
     @apply bg-glass backdrop-blur-md border border-white/10;
   }
-  
+
   .text-shadow {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-  
+
   .gradient-text {
     @apply bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent;
   }
-  
+
   .bg-noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
   }
-  
+
   .circle-bg {
     @apply opacity-15 blur-[60px];
-    background: radial-gradient(circle at center, hsl(var(--brand)) 0%, transparent 70%);
+    background: radial-gradient(
+      circle at center,
+      hsl(var(--brand)) 0%,
+      transparent 70%
+    );
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes reveal {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes counterFlip {
-  0% { transform: rotateX(0deg); opacity: 1; }
-  25% { transform: rotateX(45deg); opacity: 0.7; }
-  50% { transform: rotateX(90deg); opacity: 0.5; }
-  75% { transform: rotateX(45deg); opacity: 0.7; }
-  100% { transform: rotateX(0deg); opacity: 1; }
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: rotateX(45deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotateX(90deg);
+    opacity: 0.5;
+  }
+  75% {
+    transform: rotateX(45deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 }
 
 .animate-float {
@@ -133,7 +163,8 @@
   perspective: 1000px;
   transform-style: preserve-3d;
   overflow: hidden;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .number-animation span {
@@ -147,3 +178,11 @@
   animation: counterFlip 1.5s ease-in-out;
 }
 
+#mainHeader .logo {
+  height: 130px;
+  transition: height 0.2s ease-in-out;
+}
+
+.header-small .logo {
+  height: 90px !important;
+}

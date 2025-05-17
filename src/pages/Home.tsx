@@ -34,6 +34,25 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const header = document.getElementById("mainHeader");
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        header?.classList.add("header-small");
+        header?.classList.add("shadow-lg");
+      } else {
+        header?.classList.remove("header-small");
+        header?.classList.remove("shadow-lg");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="overflow-x-hidden bg-noise">
       <Header />
