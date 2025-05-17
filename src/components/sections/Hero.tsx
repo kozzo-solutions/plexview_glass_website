@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import plexViewLogo from "../../assets/plexview-logo.png";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -25,15 +24,6 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div data-aos="fade-up" data-aos-delay="100" className="mb-6">
-            {/* PlexView Logo */}
-            <div className="flex justify-center mb-6">
-              <img
-                src={plexViewLogo}
-                alt="PlexView Logo"
-                className="w-48 md:w-64 h-auto"
-              />
-            </div>
-
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-shadow mb-2">
               <span dangerouslySetInnerHTML={{ __html: t("hero.title") }} />
             </h1>
