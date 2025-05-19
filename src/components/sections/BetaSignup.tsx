@@ -9,12 +9,18 @@ export default function BetaSignup() {
     lastName: "",
     email: "",
     properties: "",
+    phoneNumber: "",
+    businessName: "",
+    domain: "",
     consent: false,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [selectedRole, setSelectedRole] = useState<
+    "owner" | "entrepreneur" | null
+  >(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -28,6 +34,7 @@ export default function BetaSignup() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    /*
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
@@ -58,6 +65,7 @@ export default function BetaSignup() {
       setIsSubmitting(false);
       setErrorMessage("Submission failed. Please try again.");
     }
+    */
   };
 
   return (
@@ -88,8 +96,23 @@ export default function BetaSignup() {
               </h3>
               <p className="text-gray-300">{t("betaSignup.successText")}</p>
             </div>
-          ) : (
+          ) : selectedRole ? (
             <form className="space-y-6" onSubmit={handleSubmit}>
+              <div
+                className="text-end md:absolute md:top-4 md:right-6 pb-4 text-base text-brand hover:underline cursor-pointer transition-all"
+                onClick={() =>
+                  setSelectedRole(
+                    selectedRole === "owner" ? "entrepreneur" : "owner"
+                  )
+                }
+              >
+                Je suis un{" "}
+                {selectedRole === "owner" ? "entrepreneur" : "propriétaire"} →
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                Formulaire pour{" "}
+                {selectedRole === "owner" ? "propriétaire" : "entrepreneur"}
+              </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -144,32 +167,87 @@ export default function BetaSignup() {
                   required
                 />
               </div>
-
-              <div>
-                <label
-                  htmlFor="properties"
-                  className="block text-sm font-medium text-gray-300 mb-2"
-                >
-                  {t("betaSignup.units")}
-                </label>
-                <select
-                  id="properties"
-                  name="properties"
-                  value={formData.properties}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-colors appearance-none"
-                  required
-                >
-                  <option value="" disabled>
-                    {t("betaSignup.select")}
-                  </option>
-                  <option value="1-5">{t("betaSignup.units_1_5")}</option>
-                  <option value="6-20">{t("betaSignup.units_6_20")}</option>
-                  <option value="21-50">{t("betaSignup.units_21_50")}</option>
-                  <option value="50+">{t("betaSignup.units_50_plus")}</option>
-                </select>
-              </div>
-
+              {selectedRole === "owner" && (
+                <div>
+                  <label
+                    htmlFor="properties"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
+                    {t("betaSignup.units")}
+                  </label>
+                  <select
+                    id="properties"
+                    name="properties"
+                    value={formData.properties}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-dark border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-colors appearance-none"
+                    required
+                  >
+                    <option value="" disabled>
+                      {t("betaSignup.select")}
+                    </option>
+                    <option value="1-5">{t("betaSignup.units_1_5")}</option>
+                    <option value="6-20">{t("betaSignup.units_6_20")}</option>
+                    <option value="21-50">{t("betaSignup.units_21_50")}</option>
+                    <option value="50+">{t("betaSignup.units_50_plus")}</option>
+                  </select>
+                </div>
+              )}
+              {selectedRole === "entrepreneur" && (
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="businessName"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Nom de l'entreprise
+                    </label>
+                    <input
+                      type="text"
+                      id="businessName"
+                      name="businessName"
+                      value={formData.businessName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-dark border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-colors"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="phoneNumber"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Numéro de téléphone
+                    </label>
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-dark border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-colors"
+                      required
+                    />
+                  </div>
+                  <div className="md:col-span-2">
+                    <label
+                      htmlFor="domain"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Domaine de pratique
+                    </label>
+                    <input
+                      type="text"
+                      id="domain"
+                      name="domain"
+                      value={formData.domain}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-dark border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-colors"
+                      required
+                    />
+                  </div>
+                </div>
+              )}
               <div className="flex items-start">
                 <input
                   type="checkbox"
@@ -210,6 +288,28 @@ export default function BetaSignup() {
                 </button>
               </div>
             </form>
+          ) : (
+            <div className="text-center py-8">
+              <h3 className="text-2xl font-bold pb-6">Je suis un :</h3>
+              <div className="gap-7 flex justify-center mt-4">
+                <button
+                  onClick={() => {
+                    setSelectedRole("owner");
+                  }}
+                  className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  Propriétaire
+                </button>
+                <button
+                  onClick={() => {
+                    setSelectedRole("entrepreneur");
+                  }}
+                  className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  Entrepreneur
+                </button>
+              </div>
+            </div>
           )}
 
           <div className="mt-8 text-center text-sm text-gray-400">
