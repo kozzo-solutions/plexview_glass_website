@@ -9,7 +9,9 @@ function Router() {
   return (
     <Switch>
       <Route path="/plexview_glass_website" component={Home} />
-      <Redirect to="/plexview_glass_website" />
+      <Route path="/">
+        <Redirect to="/plexview_glass_website" />
+      </Route>
     </Switch>
   );
 }

@@ -10,7 +10,7 @@ i18n
     fallbackLng: "en",
     interpolation: { escapeValue: false },
     backend: {
-      loadPath: `locales/{{lng}}/translations.json`,
+      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translations.json`,
     },
   });
 
