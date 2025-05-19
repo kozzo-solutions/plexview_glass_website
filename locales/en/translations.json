@@ -36,7 +36,16 @@
     "consent": "I agree to receive information about PlexView and understand that my data will be processed in accordance with the <a href=\"#\" class=\"text-brand underline\">Privacy Policy</a>.",
     "submit": "Join the waiting list",
     "processing": "Processing...",
-    "limited": "Spots are limited. We will contact you as soon as a spot is available."
+    "limited": "Spots are limited. We will contact you as soon as a spot is available.",
+    "owner": "Owner",
+    "entrepreneur": "Entrepreneur",
+    "businessName": "Business name",
+    "phoneNumber": "Phone number",
+    "domain": "Domain",
+    "rolePrompt": "I am a:",
+    "formTitle": "Form for {{role}}",
+    "switchRole": "I am a {{role}} →",
+    "error": "Submission failed. Please try again."
   },
   "features": {
     "title": "Powerful <span class=\"gradient-text\">Features</span>",
