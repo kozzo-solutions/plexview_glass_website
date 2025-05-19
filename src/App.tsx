@@ -8,7 +8,7 @@ import { queryClient } from "./lib/queryClient";
 function Router() {
   return (
     <Switch>
-      <Route path="/plexview_glass_website/" component={Home} />
+      <Route path="/plexview_glass_website" component={Home} />
       <Redirect to="/plexview_glass_website" />
     </Switch>
   );
