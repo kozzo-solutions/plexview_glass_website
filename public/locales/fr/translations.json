@@ -1,0 +1,119 @@
+{
+  "header": {
+    "mission": "Mission",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "toggle": "EN",
+    "join_beta": "Rejoindre la BETA"
+  },
+  "hero": {
+    "title": "La gestion immobilière <span class=\"gradient-text\">réinventée</span>",
+    "subtitle": "Une plateforme tout-en-un pour la gestion de vos biens immobiliers",
+    "cta": "Rejoindre la liste d'attente",
+    "poweredBy": "Propulsé par le groupe Nolet Andrews"
+  },
+  "mission": {
+    "title": "Notre <span class=\"gradient-text\">mission</span>",
+    "description1": "PlexView simplifie la gestion immobilière en combinant une interface intuitive, des outils puissants et un réseau de partenaires qualifiés pour créer une expérience sans friction.",
+    "description2": "Notre objectif est de vous faire gagner du temps et de l'énergie pour vous concentrer sur ce qui compte vraiment : développer votre patrimoine immobilier.",
+    "values": ["Simplicité", "Efficacité", "Innovation"],
+    "imageAlt": "Dashboard PlexView sur tablette"
+  },
+  "betaSignup": {
+    "title": "Rejoignez la <span class=\"gradient-text\">BETA</span>",
+    "subtitle": "Soyez parmi les premiers à découvrir PlexView et bénéficiez d'avantages exclusifs",
+    "successTitle": "Merci pour votre inscription!",
+    "successText": "Nous vous contacterons dès qu'une place sera disponible pour la beta.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email professionnel",
+    "units": "Nombre de logements gérés",
+    "select": "Sélectionnez",
+    "units_1_5": "1 à 5 logements",
+    "units_6_20": "6 à 20 logements",
+    "units_21_50": "21 à 50 logements",
+    "units_50_plus": "Plus de 50 logements",
+    "consent": "J'accepte de recevoir des informations sur PlexView et je comprends que mes données seront traitées conformément à la <a href=\"#\" class=\"text-brand underline\">Politique de confidentialité</a>.",
+    "submit": "Rejoindre la liste d'attente",
+    "processing": "Traitement...",
+    "limited": "Les places sont limitées. Nous vous contacterons dès qu'une place sera disponible."
+  },
+  "features": {
+    "title": "Fonctionnalités <span class=\"gradient-text\">puissantes</span>",
+    "subtitle": "Des outils conçus pour simplifier chaque aspect de la gestion immobilière",
+    "items": [
+      {
+        "icon": "fa-chart-line",
+        "title": "Tableau de bord intelligent",
+        "description": "Visualisez toutes vos opérations avec des données en temps réel et des indicateurs personnalisables."
+      },
+      {
+        "icon": "fa-tools",
+        "title": "Maintenance automatisée",
+        "description": "Gérez facilement les demandes d'intervention et collaborez avec des professionnels qualifiés."
+      },
+      {
+        "icon": "fa-file-contract",
+        "title": "Gestion des baux",
+        "description": "Création, signature et suivi de vos contrats de location en quelques clics."
+      },
+      {
+        "icon": "fa-credit-card",
+        "title": "Paiements simplifiés",
+        "description": "Percevez vos loyers automatiquement et suivez vos revenus locatifs sans effort."
+      },
+      {
+        "icon": "fa-comments",
+        "title": "Communication centralisée",
+        "description": "Échangez facilement avec vos locataires et prestataires depuis une interface unique."
+      },
+      {
+        "icon": "fa-file-invoice-dollar",
+        "title": "Comptabilité intégrée",
+        "description": "Suivez vos finances et générez des rapports détaillés pour optimiser votre rentabilité."
+      }
+    ],
+    "highlightTitle": "Une interface pensée pour <span class=\"gradient-text\">vous</span>",
+    "highlightDescription": "Notre interface intuitive vous permet de gérer l'ensemble de votre portefeuille immobilier depuis un seul endroit, sur tous vos appareils.",
+    "highlightList": [
+      "Personnalisable selon vos besoins",
+      "Compatible avec mobile, tablette et ordinateur",
+      "Mise à jour en temps réel"
+    ],
+    "imageAlt": "Interface PlexView sur plusieurs appareils"
+  },
+  "faq": {
+    "title": "Des questions sur <span class=\"gradient-text\">PlexView</span>? Des réponses sur <span class=\"gradient-text\">PlexView</span>.",
+    "subtitle": "Tout ce que vous devez savoir sur PlexView",
+    "items": [
+      {
+        "question": "À qui s'adresse PlexView ?",
+        "answer": "PlexView s'adresse à tous les acteurs de l'immobilier : propriétaires individuels, gestionnaires de logements, syndics de copropriété et agences immobilières. Notre plateforme s'adapte à la taille de votre portefeuille, que vous possédiez un studio ou gériez des centaines de logements."
+      },
+      {
+        "question": "Comment mes données sont-elles protégées ?",
+        "answer": "La sécurité est notre priorité. Toutes vos données sont chiffrées de bout en bout et nous utilisons des serveurs sécurisés conformes aux normes RGPD. Nous effectuons des sauvegardes régulières et nos systèmes sont audités par des experts en cybersécurité."
+      },
+      {
+        "question": "Qu'est-ce qui différencie PlexView des autres solutions ?",
+        "answer": "PlexView se distingue par son interface moderne et intuitive, son approche proactive de la gestion (alertes anticipées, suggestions d'optimisation) et son écosystème connecté de partenaires qualifiés. Notre solution est pensée pour vous faire gagner du temps tout en optimisant la rentabilité de votre patrimoine."
+      },
+      {
+        "question": "Quels sont les tarifs de PlexView ?",
+        "answer": "Nous proposons plusieurs formules adaptées à différents besoins, de l'offre Essentielle pour les petits propriétaires à l'offre Entreprise pour les gestionnaires professionnels. Les tarifs définitifs seront annoncés lors du lancement officiel, mais les participants à la beta bénéficieront de conditions préférentielles à vie."
+      },
+      {
+        "question": "Comment rejoindre la beta ?",
+        "answer": "Pour rejoindre notre programme beta, il vous suffit de remplir le formulaire d'inscription en bas de page. Notre équipe vous contactera pour vous présenter la plateforme et vous accompagner dans la prise en main de PlexView."
+      }
+    ]
+  },
+  "footer": {
+    "slogan": "La gestion immobilière réinventée",
+    "mission": "Mission",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "join_beta": "Rejoindre la BETA",
+    "copyright": "Tous droits réservés."
+  }
+}
