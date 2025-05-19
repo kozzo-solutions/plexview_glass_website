@@ -63,7 +63,7 @@ export default function BetaSignup() {
       }, 5000);
     } catch (err) {
       setIsSubmitting(false);
-      setErrorMessage("Submission failed. Please try again.");
+      setErrorMessage(t("betaSignup.error") || "Submission failed. Please try again.");
     }
     */
   };
@@ -106,12 +106,22 @@ export default function BetaSignup() {
                   )
                 }
               >
-                Je suis un{" "}
-                {selectedRole === "owner" ? "entrepreneur" : "propriétaire"} →
+                {t("betaSignup.switchRole", {
+                  role: t(
+                    selectedRole === "owner"
+                      ? "betaSignup.entrepreneur"
+                      : "betaSignup.owner"
+                  ),
+                })}
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">
-                Formulaire pour{" "}
-                {selectedRole === "owner" ? "propriétaire" : "entrepreneur"}
+                {t("betaSignup.formTitle", {
+                  role: t(
+                    selectedRole === "owner"
+                      ? "betaSignup.owner"
+                      : "betaSignup.entrepreneur"
+                  ),
+                })}
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -200,7 +210,7 @@ export default function BetaSignup() {
                       htmlFor="businessName"
                       className="block text-sm font-medium text-gray-300 mb-2"
                     >
-                      Nom de l'entreprise
+                      {t("betaSignup.businessName")}
                     </label>
                     <input
                       type="text"
@@ -217,7 +227,7 @@ export default function BetaSignup() {
                       htmlFor="phoneNumber"
                       className="block text-sm font-medium text-gray-300 mb-2"
                     >
-                      Numéro de téléphone
+                      {t("betaSignup.phoneNumber")}
                     </label>
                     <input
                       type="text"
@@ -234,7 +244,7 @@ export default function BetaSignup() {
                       htmlFor="domain"
                       className="block text-sm font-medium text-gray-300 mb-2"
                     >
-                      Domaine de pratique
+                      {t("betaSignup.domain")}
                     </label>
                     <input
                       type="text"
@@ -290,7 +300,7 @@ export default function BetaSignup() {
             </form>
           ) : (
             <div className="text-center py-8">
-              <h3 className="text-2xl font-bold pb-6">Je suis un :</h3>
+              <h3 className="text-2xl font-bold pb-6">{t("betaSignup.rolePrompt")}</h3>
               <div className="gap-7 flex justify-center mt-4">
                 <button
                   onClick={() => {
@@ -298,7 +308,7 @@ export default function BetaSignup() {
                   }}
                   className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  Propriétaire
+                  {t("betaSignup.owner")}
                 </button>
                 <button
                   onClick={() => {
@@ -306,7 +316,7 @@ export default function BetaSignup() {
                   }}
                   className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  Entrepreneur
+                  {t("betaSignup.entrepreneur")}
                 </button>
               </div>
             </div>
