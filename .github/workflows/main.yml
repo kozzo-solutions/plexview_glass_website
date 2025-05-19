@@ -1,13 +1,31 @@
-image: node:20
+name: Deploy to GitHub Pages
 
-pages:
-  stage: deploy
-  script:
-    - npm ci
-    - npm run build
-    - mv dist public
-  artifacts:
-    paths:
-      - public
-  only:
-    - main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist   # Change to ./build or ./out if your build output is different
