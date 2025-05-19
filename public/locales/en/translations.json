@@ -27,12 +27,12 @@
     "firstName": "First name",
     "lastName": "Last name",
     "email": "Business email",
-    "properties": "Number of properties managed",
+    "units": "Number of units managed",
     "select": "Select",
-    "properties_1_5": "1 to 5 properties",
-    "properties_6_20": "6 to 20 properties",
-    "properties_21_50": "21 to 50 properties",
-    "properties_50_plus": "More than 50 properties",
+    "units_1_5": "1 to 5 units",
+    "units_6_20": "6 to 20 units",
+    "units_21_50": "21 to 50 units",
+    "units_50_plus": "More than 50 units",
     "consent": "I agree to receive information about PlexView and understand that my data will be processed in accordance with the <a href=\"#\" class=\"text-brand underline\">Privacy Policy</a>.",
     "submit": "Join the waiting list",
     "processing": "Processing...",
@@ -83,12 +83,12 @@
     "imageAlt": "PlexView interface on multiple devices"
   },
   "faq": {
-    "title": "Question about <span class=\"gradient-text\">PlexView</span>?",
+    "title": "Question about <span class=\"gradient-text\">PlexView</span>? Answers about PlexView.",
     "subtitle": "Everything you need to know about PlexView",
     "items": [
       {
         "question": "Who is PlexView for?",
-        "answer": "PlexView is for all real estate professionals: individual owners, property managers, condominium associations, and real estate agencies. Our platform adapts to the size of your portfolio, whether you own a studio or manage hundreds of properties."
+        "answer": "PlexView is for all real estate professionals: individual owners, property managers, condominium associations, and real estate agencies. Our platform adapts to the size of your portfolio, whether you own a studio or manage hundreds of units."
       },
       {
         "question": "How is my data protected?",

@@ -150,7 +150,7 @@ export default function BetaSignup() {
                   htmlFor="properties"
                   className="block text-sm font-medium text-gray-300 mb-2"
                 >
-                  {t("betaSignup.properties")}
+                  {t("betaSignup.units")}
                 </label>
                 <select
                   id="properties"
@@ -163,16 +163,10 @@ export default function BetaSignup() {
                   <option value="" disabled>
                     {t("betaSignup.select")}
                   </option>
-                  <option value="1-5">{t("betaSignup.properties_1_5")}</option>
-                  <option value="6-20">
-                    {t("betaSignup.properties_6_20")}
-                  </option>
-                  <option value="21-50">
-                    {t("betaSignup.properties_21_50")}
-                  </option>
-                  <option value="50+">
-                    {t("betaSignup.properties_50_plus")}
-                  </option>
+                  <option value="1-5">{t("betaSignup.units_1_5")}</option>
+                  <option value="6-20">{t("betaSignup.units_6_20")}</option>
+                  <option value="21-50">{t("betaSignup.units_21_50")}</option>
+                  <option value="50+">{t("betaSignup.units_50_plus")}</option>
                 </select>
               </div>
 

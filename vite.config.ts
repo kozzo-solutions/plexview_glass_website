@@ -4,6 +4,7 @@ import path from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/plexview_glass_website/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -24,7 +25,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "."),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   publicDir: "public",

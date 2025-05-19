@@ -58,33 +58,27 @@ export default function Features() {
         <div className="grid md:grid-cols-2 items-center">
           <div className="p-8 md:p-12">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Une interface pensée pour{" "}
-              <span className="gradient-text">vous</span>
+              {t("features.highlightTitle")}
+              <span className="gradient-text">
+                {t("features.highlightGradiantText")}
+              </span>
             </h3>
             <p className="text-gray-300 text-lg mb-8">
-              Notre interface intuitive vous permet de gérer l'ensemble de votre
-              portefeuille immobilier depuis un seul endroit, sur tous vos
-              appareils.
+              {t("features.highlightDescription")}
             </p>
             <ul className="space-y-4 text-lg">
-              <li className="flex items-start">
-                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
-                <span>Personnalisable selon vos besoins</span>
-              </li>
-              <li className="flex items-start">
-                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
-                <span>Compatible avec mobile, tablette et ordinateur</span>
-              </li>
-              <li className="flex items-start">
-                <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
-                <span>Mise à jour en temps réel</span>
-              </li>
+              {highlightList.map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <i className="fa-solid fa-check text-brand mt-1 mr-3 text-xl"></i>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="h-full">
             <img
               src={plexViewInterface}
-              alt="Interface PlexView sur plusieurs appareils"
+              alt={t("features.imageAlt")}
               className="h-full w-full object-cover"
             />
           </div>
