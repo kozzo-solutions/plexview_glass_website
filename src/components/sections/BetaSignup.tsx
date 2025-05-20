@@ -5,6 +5,7 @@ export default function BetaSignup() {
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
+    role: "",
     firstName: "",
     lastName: "",
     email: "",
@@ -34,16 +35,20 @@ export default function BetaSignup() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    /*
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
 
     try {
-      const response = await fetch("https://sheetdb.io/api/v1/5wwr1orhjl4uw", {
+      const dataToSend = {
+        ...formData,
+        role: selectedRole || "",
+      };
+
+      const response = await fetch("https://sheetdb.io/api/v1/onr98ja1m8dab", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: formData }),
+        body: JSON.stringify({ data: dataToSend }),
       });
 
       if (!response.ok) throw new Error("Network response was not ok");
@@ -54,18 +59,24 @@ export default function BetaSignup() {
       setTimeout(() => {
         setSubmitSuccess(false);
         setFormData({
+          role: "",
           firstName: "",
           lastName: "",
           email: "",
           properties: "",
+          phoneNumber: "",
+          businessName: "",
+          domain: "",
           consent: false,
         });
+        setSelectedRole(null);
       }, 5000);
     } catch (err) {
       setIsSubmitting(false);
-      setErrorMessage(t("betaSignup.error") || "Submission failed. Please try again.");
+      setErrorMessage(
+        t("betaSignup.error") || "Submission failed. Please try again."
+      );
     }
-    */
   };
 
   return (
@@ -300,7 +311,9 @@ export default function BetaSignup() {
             </form>
           ) : (
             <div className="text-center py-8">
-              <h3 className="text-2xl font-bold pb-6">{t("betaSignup.rolePrompt")}</h3>
+              <h3 className="text-2xl font-bold pb-6">
+                {t("betaSignup.rolePrompt")}
+              </h3>
               <div className="gap-7 flex justify-center mt-4">
                 <button
                   onClick={() => {
