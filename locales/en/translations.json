@@ -16,7 +16,11 @@
     "title": "Our <span class=\"gradient-text\">mission</span>",
     "description1": "PlexView simplifies property management by combining an intuitive interface, powerful tools, and a network of qualified partners to create a seamless experience.",
     "description2": "Our goal is to save you time and energy so you can focus on what really matters: growing your real estate portfolio.",
-    "values": ["Simplicity", "Efficiency", "Innovation"],
+    "values": [
+      "Simplicity",
+      "Efficiency",
+      "Innovation"
+    ],
     "imageAlt": "PlexView dashboard on tablet"
   },
   "betaSignup": {
@@ -33,7 +37,8 @@
     "units_6_20": "6 to 20 units",
     "units_21_50": "21 to 50 units",
     "units_50_plus": "More than 50 units",
-    "consent": "I agree to receive information about PlexView and understand that my data will be processed in accordance with the <a href=\"#\" class=\"text-brand underline\">Privacy Policy</a>.",
+    "consentBefore": "I agree to receive information about PlexView and I understand that my data will be processed in accordance with",
+    "consentLink": "the Privacy Policy",
     "submit": "Join the waiting list",
     "processing": "Processing...",
     "limited": "Spots are limited. We will contact you as soon as a spot is available.",
@@ -114,6 +119,83 @@
       {
         "question": "How do I join the beta?",
         "answer": "To join our beta program, simply fill out the registration form at the bottom of the page. Our team will contact you to introduce the platform and help you get started with PlexView."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated: May 26, 2025",
+    "sections": [
+      {
+        "heading": "1. Collection of personal information",
+        "paragraphs": [
+          "When you fill out a form on our site, we collect the following information:",
+          "This data is collected only if you provide it voluntarily, for example to:"
+        ],
+        "lists": [
+          [
+            "First name",
+            "Last name",
+            "Email address",
+            "Phone number"
+          ],
+          [
+            "Show interest in the PlexView platform",
+            "Be informed about the beta launch",
+            "Be contacted at the official release"
+          ]
+        ]
+      },
+      {
+        "heading": "2. Use of information",
+        "paragraphs": [
+          "The information we collect is used solely for the following purposes:"
+        ],
+        "lists": [
+          [
+            "Marketing and informational communication related to PlexView",
+            "Sending updates on the development of our platform",
+            "Inviting you to participate in the beta version",
+            "Notifying you of the official launch"
+          ]
+        ]
+      },
+      {
+        "heading": "3. Data storage and protection",
+        "paragraphs": [
+          "Personal information is stored on secure servers and accessible only to authorized team members. We take reasonable technical and organizational measures to protect your data from unauthorized access, loss, or theft."
+        ]
+      },
+      {
+        "heading": "4. Data retention period",
+        "paragraphs": [
+          "We retain your information for a maximum period of 24 months after the date of submission, unless you request earlier deletion."
+        ]
+      },
+      {
+        "heading": "5. Consent",
+        "paragraphs": [
+          "By providing us with your personal information via our form, you consent to its collection and use in accordance with this policy. You may withdraw your consent at any time by contacting us at <a href=\"mailto:groupenoletandrews@gmail.com\" class=\"underline text-brand\">groupenoletandrews@gmail.com</a>."
+        ]
+      },
+      {
+        "heading": "6. Access, modification, and deletion",
+        "paragraphs": [
+          "You have the right to view, correct, or delete your personal information held by PlexView. To exercise this right, please contact us at the email address above."
+        ]
+      },
+      {
+        "heading": "7. Privacy officer",
+        "paragraphs": [
+          "In accordance with Law 25 (Québec), the privacy officer is:",
+          "<strong>Groupe Nolet & Andrews</strong><br>Privacy Protection Officer<br> <a href=\"mailto:groupenoletandrews@gmail.com\" class=\"underline text-brand\">groupenoletandrews@gmail.com</a>"
+        ]
+      },
+      {
+        "heading": "8. Changes",
+        "paragraphs": [
+          "We reserve the right to modify this privacy policy at any time. Any changes will be published on this page along with the update date."
+        ]
       }
     ]
   },
