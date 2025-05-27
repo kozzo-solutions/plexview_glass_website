@@ -33,7 +33,8 @@
     "units_6_20": "6 à 20 logements",
     "units_21_50": "21 à 50 logements",
     "units_50_plus": "Plus de 50 logements",
-    "consent": "J'accepte de recevoir des informations sur PlexView et je comprends que mes données seront traitées conformément à la <a href=\"#\" class=\"text-brand underline\">Politique de confidentialité</a>.",
+    "consentBefore": "J'accepte de recevoir des informations sur PlexView et je comprends que mes données seront traitées conformément à",
+    "consentLink": "la Politique de confidentialité",
     "submit": "Rejoindre la liste d'attente",
     "processing": "Traitement...",
     "limited": "Les places sont limitées. Nous vous contacterons dès qu'une place sera disponible.",
@@ -117,6 +118,70 @@
       }
     ]
   },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdate": "Dernière mise à jour : 26 mai 2025",
+    "sections": [
+      {
+        "heading": "1. Collecte des renseignements personnels",
+        "paragraphs": [
+          "Lorsque vous remplissez un formulaire sur notre site, nous recueillons les renseignements suivants :",
+          "Ces données sont collectées uniquement si vous nous les fournissez volontairement, par exemple pour :"
+        ],
+        "lists": [
+          ["Prénom", "Nom", "Adresse courriel", "Numéro de téléphone"],
+          ["Manifester votre intérêt pour la plateforme Plexview", "Être informé du lancement de la version bêta", "Être contacté lors de la sortie officielle"]
+        ]
+      },
+      {
+        "heading": "2. Utilisation des renseignements",
+        "paragraphs": [
+          "Les renseignements que nous collectons servent uniquement à des fins de :"
+        ],
+        "lists": [
+          ["Communication marketing et informative en lien avec Plexview", "Envoi de mises à jour sur le développement de notre plateforme", "Invitation à participer à la version bêta", "Notification du lancement officiel"]
+        ]
+      },
+      {
+        "heading": "3. Stockage et protection des données",
+        "paragraphs": [
+          "Les renseignements personnels sont stockés sur des serveurs sécurisés et accessibles uniquement par les membres autorisés de notre équipe. Nous prenons des mesures techniques et organisationnelles raisonnables pour protéger vos données contre l’accès non autorisé, la perte ou le vol."
+        ]
+      },
+      {
+        "heading": "4. Durée de conservation",
+        "paragraphs": [
+          "Nous conservons vos renseignements pour une période maximale de 24 mois après la date de soumission, à moins que vous nous demandiez de les supprimer plus tôt."
+        ]
+      },
+      {
+        "heading": "5. Consentement",
+        "paragraphs": [
+          "En nous fournissant vos renseignements personnels via notre formulaire, vous consentez à leur collecte et à leur utilisation conformément à cette politique. Vous pouvez retirer votre consentement en tout temps en nous écrivant à <a href=\"mailto:groupenoletandrews@gmail.com\" class=\"underline text-brand\">groupenoletandrews@gmail.com</a>."
+        ]
+      },
+      {
+        "heading": "6. Accès, modification et suppression",
+        "paragraphs": [
+          "Vous avez le droit de consulter, corriger ou supprimer vos renseignements personnels détenus par Plexview. Pour exercer ce droit, veuillez nous contacter à l’adresse courriel ci-dessus."
+        ]
+      },
+      {
+        "heading": "7. Responsable de la protection des renseignements personnels",
+        "paragraphs": [
+          "Conformément à la Loi 25 (Québec), le responsable de la protection des renseignements personnels est :",
+          "<strong>Groupe Nolet & Andrews</strong><br>Responsable à la protection des renseignements personnels<br> <a href=\"mailto:groupenoletandrews@gmail.com\" class=\"underline text-brand\">groupenoletandrews@gmail.com</a>"
+        ]
+      },
+      {
+        "heading": "8. Modifications",
+        "paragraphs": [
+          "Nous nous réservons le droit de modifier cette politique de confidentialité en tout temps. Toute modification sera publiée sur cette page avec la date de mise à jour."
+        ]
+      }
+    ]
+  },
+  
   "footer": {
     "slogan": "La gestion immobilière réinventée",
     "mission": "Mission",

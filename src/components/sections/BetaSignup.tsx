@@ -1,8 +1,18 @@
 import { useState } from "react";
+import { useEffect } from "react";
+import Modal from "../ui/modal";
 import { useTranslation } from "react-i18next";
+// import { set } from "date-fns";
+import parse from 'html-react-parser';
+
 
 export default function BetaSignup() {
   const { t } = useTranslation();
+  const sections = t("privacy.sections", { returnObjects: true }) as {
+    heading: string;
+    paragraphs: string[];
+    lists?: string[][];
+  }[];
 
   const [formData, setFormData] = useState({
     role: "",
@@ -18,10 +28,36 @@ export default function BetaSignup() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedRole, setSelectedRole] = useState<
     "owner" | "entrepreneur" | null
   >(null);
+
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      e.preventDefault();
+      setPrivacyModalOpen(true);
+    };
+
+    const timeout = setTimeout(() => {
+      const link = document.getElementById("privacy-link");
+      if (link) {
+        link.addEventListener("click", handleClick);
+      }
+    }, 500);
+
+    return () => {
+      clearTimeout(timeout);
+      const link = document.getElementById("privacy-link");
+      if (link) {
+        link.removeEventListener("click", handleClick);
+      }
+    };
+  }, []);
+
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -280,11 +316,17 @@ export default function BetaSignup() {
                   required
                 />
                 <label htmlFor="consent" className="ml-3 text-sm text-gray-300">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: t("betaSignup.consent"),
+                  {t("betaSignup.consentBefore")}&nbsp;
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setPrivacyModalOpen(true);
                     }}
-                  />
+                    className="text-brand underline"
+                  >
+                    {t("betaSignup.consentLink")}
+                  </a>.
                 </label>
               </div>
 
@@ -314,24 +356,21 @@ export default function BetaSignup() {
               <h3 className="text-2xl font-bold pb-6">
                 {t("betaSignup.rolePrompt")}
               </h3>
-              <div className="gap-7 flex justify-center mt-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 justify-center mt-4">
                 <button
-                  onClick={() => {
-                    setSelectedRole("owner");
-                  }}
-                  className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
+                  onClick={() => setSelectedRole("owner")}
+                  className="w-full sm:w-auto bg-gradient-to-r from-brand to-brand-dark px-6 py-3 sm:px-8 sm:py-4 rounded-full text-dark font-bold text-base sm:text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   {t("betaSignup.owner")}
                 </button>
                 <button
-                  onClick={() => {
-                    setSelectedRole("entrepreneur");
-                  }}
-                  className="bg-gradient-to-r from-brand to-brand-dark px-8 py-4 rounded-full text-dark font-bold text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
+                  onClick={() => setSelectedRole("entrepreneur")}
+                  className="w-full sm:w-auto bg-gradient-to-r from-brand to-brand-dark px-6 py-3 sm:px-8 sm:py-4 rounded-full text-dark font-bold text-base sm:text-lg hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   {t("betaSignup.entrepreneur")}
                 </button>
               </div>
+
             </div>
           )}
 
@@ -340,6 +379,26 @@ export default function BetaSignup() {
           </div>
         </div>
       </div>
+
+      <Modal isOpen={isPrivacyModalOpen} onClose={() => setPrivacyModalOpen(false)} title={t("privacy.title")}>
+        <p className="text-sm text-gray-400 mb-4">{t("privacy.lastUpdate")}</p>
+        {sections.map((section, index) => (
+          <div key={index} className="mb-6">
+            <h3 className="text-md font-semibold mb-2">{section.heading}</h3>
+            {section.paragraphs.map((p, idx) => (
+              <p key={idx} className="text-sm text-gray-300 mb-2">{parse(p)}</p>
+            ))}
+            {section.lists?.map((list, listIdx) => (
+              <ul key={listIdx} className="list-disc ml-6 text-sm text-gray-300">
+                {list.map((item, itemIdx) => (
+                  <li key={itemIdx}>{item}</li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        ))}
+      </Modal>
+
     </section>
   );
 }
