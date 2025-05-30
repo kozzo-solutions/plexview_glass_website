@@ -189,5 +189,10 @@
     "faq": "FAQ",
     "join_beta": "Rejoindre la BETA",
     "copyright": "Tous droits réservés."
+  },
+
+  "comingSoon": {
+    "heading": "Quelque chose d'épique<br/><span class='text-4xl md:text-5xl font-light text-yellow-200'>arrive</span>",
+    "description": "Nous préparons quelque chose d'extraordinaire. Restez à l'écoute !"
   }
 }
