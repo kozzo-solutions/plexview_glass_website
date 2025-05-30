@@ -206,5 +206,10 @@
     "faq": "FAQ",
     "join_beta": "Join the BETA",
     "copyright": "All rights reserved."
+  },
+
+  "comingSoon": {
+    "heading": "Something epic<br/><span class='text-4xl md:text-5xl font-light text-yellow-200'>is coming</span>",
+    "description": "We're crafting something extraordinary. Stay tuned!"
   }
 }
