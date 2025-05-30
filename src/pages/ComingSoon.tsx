@@ -3,10 +3,7 @@
 import type React from "react"
 import { useTranslation } from "react-i18next"
 
-const YELLOW_GRADIENT = "bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200"
-const YELLOW_SHADOW = "shadow-yellow-300/30"
-
-const ComingSoon: React.FC = () => {
+export default function ComingSoon() {
   const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
@@ -42,5 +39,3 @@ const ComingSoon: React.FC = () => {
     </div>
   )
 }
-
-export default ComingSoon
