@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import imageMission from "../../assets/mission.png"; // Adjust the path based on your project structure
 
 export default function Mission() {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ export default function Mission() {
 
           <div data-aos="fade-left" className="relative">
             <img
-              src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=800&h=800&q=80"
+              src={imageMission}
               alt={t("mission.imageAlt")}
               className="rounded-xl shadow-2xl shadow-brand/5 w-full"
               data-parallax-factor="0.1"
