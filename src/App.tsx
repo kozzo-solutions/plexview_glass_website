@@ -6,7 +6,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Redirect, Route, Switch } from "wouter";
 import { queryClient } from "./lib/queryClient";
 
-const RELEASE_DATE = new Date("2025-06-01T10:00:00-04:00");
+const RELEASE_DATE = new Date("2025-06-01T12:00:00-04:00");
 
 function isAfterRelease(): boolean {
   const now = new Date();
