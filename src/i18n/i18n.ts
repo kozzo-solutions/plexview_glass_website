@@ -6,8 +6,8 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    lng: "en",
-    fallbackLng: "fr",
+    lng: "fr",
+    fallbackLng: "en",
     interpolation: { escapeValue: false },
     backend: {
       loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translations.json`,
