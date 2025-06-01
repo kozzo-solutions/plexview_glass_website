@@ -98,7 +98,7 @@
     "items": [
       {
         "question": "À qui s'adresse PlexView ?",
-        "answer": "PlexView s’adresse à tous les propriétaires souhaitant simplifier, optimiser et professionnaliser la gestion de leurs immeubles locatifs.\n\n Que vous soyez propriétaire débutant, expérimenté ou à la tête d’un portefeuille immobilier plus important, ou encore une entreprise de gestion, la plateforme s’adapte à vos besoins et à votre réalité.\n\n PlexView est également un atout pour les entrepreneurs en bâtiment qui souhaitent élargir leur clientèle et accéder à des mandats qualifiés, directement liés au marché locatif résidentiel."
+        "answer": "PlexView s’adresse à tous les propriétaires souhaitant simplifier, optimiser et professionnaliser la gestion de leurs immeubles locatifs.<br><br> Que vous soyez propriétaire débutant, expérimenté ou à la tête d’un portefeuille immobilier plus important, ou encore une entreprise de gestion, la plateforme s’adapte à vos besoins et à votre réalité.<br><br> PlexView est également un atout pour les entrepreneurs en bâtiment qui souhaitent élargir leur clientèle et accéder à des mandats qualifiés, directement liés au marché locatif résidentiel."
       },
       {
         "question": "Comment mes données sont-elles protégées ?",
@@ -106,11 +106,11 @@
       },
       {
         "question": "Qu'est-ce qui différencie PlexView des autres solutions ?",
-        "answer": "PlexView redéfinit la gestion locative en alliant technologie, efficacité et tranquillité d’esprit.\n Pensée pour les propriétaires qui souhaitent garder le contrôle tout en réduisant leur charge mentale, notre plateforme combine des outils intuitifs de gestion avec un réseau intégré d’entrepreneurs qualifiés, prêts à intervenir rapidement pour l’entretien de vos immeubles.\n Fini les solutions partielles ou rigides. PlexView va bien au-delà de la simple comptabilité ou de la gestion locative : c’est une approche complète, souple et transparente, qui vous permet de gagner du temps, de réduire les imprévus et d’assurer un meilleur suivi sur le terrain — sans sacrifier votre autonomie.\n En un mot : simplicité, performance, et un service à la hauteur de vos attentes."
+        "answer": "PlexView redéfinit la gestion locative en alliant technologie, efficacité et tranquillité d’esprit.<br> Pensée pour les propriétaires qui souhaitent garder le contrôle tout en réduisant leur charge mentale, notre plateforme combine des outils intuitifs de gestion avec un réseau intégré d’entrepreneurs qualifiés, prêts à intervenir rapidement pour l’entretien de vos immeubles.<br> Fini les solutions partielles ou rigides. PlexView va bien au-delà de la simple comptabilité ou de la gestion locative : c’est une approche complète, souple et transparente, qui vous permet de gagner du temps, de réduire les imprévus et d’assurer un meilleur suivi sur le terrain — sans sacrifier votre autonomie.<br> En un mot : simplicité, performance, et un service à la hauteur de vos attentes."
       },
       {
         "question": "Quels sont les tarifs de PlexView ?",
-        "answer": "Nos forfaits sont basés sur une formule de tarification flexible, adaptée à la taille de votre parc immobilier. Que vous gériez quelques logements ou plusieurs dizaines, notre modèle vous garantit un accès à l’ensemble des fonctionnalités, sans frais inutiles.\n Les tarifs officiels seront dévoilés lors du lancement de la version bêta."
+        "answer": "Nos forfaits sont basés sur une formule de tarification flexible, adaptée à la taille de votre parc immobilier. Que vous gériez quelques logements ou plusieurs dizaines, notre modèle vous garantit un accès à l’ensemble des fonctionnalités, sans frais inutiles.<br><br> Les tarifs officiels seront dévoilés lors du lancement de la version bêta."
       },
       {
         "question": "Comment rejoindre la beta ?",

@@ -64,7 +64,10 @@ export default function FAQ() {
                     openIndices.includes(index) ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <p className="text-gray-300 pb-6">{item.answer}</p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: item.answer }}
+                    className="text-gray-300 pb-6"
+                  ></p>
                 </div>
               </div>
             </div>
