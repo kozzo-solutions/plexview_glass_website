@@ -77,7 +77,7 @@ export default function Features() {
             <img
               src={plexViewInterface}
               alt={t("features.imageAlt")}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover rounded-xl shadow-2xl shadow-brand/5"
             />
           </div>
         </div>
